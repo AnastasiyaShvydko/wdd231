@@ -24,7 +24,7 @@ header{
     grid-template: auto auto/ 25% 25% 25% 25% ;
     background-color: var(--beige);
     align-items: center;
-    color: var(---black);
+    color: var(--black);
 
 }#menu{
     display: block;
@@ -182,7 +182,7 @@ ul{
     width: 80%;
     background-color: var(--beige);
     text-align: center;
-    color: var(---black);
+    color: var(--black);
 
 }
 
