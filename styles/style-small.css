@@ -26,8 +26,10 @@ header{
     align-items: center;
     color: var(--black);
 
-}#menu{
+}
+#menu{
     display: block;
+   
     text-decoration: none;
     font-size: 2em;
     justify-self: flex-end;
@@ -59,12 +61,15 @@ nav{
 
 .navigation a{
     display: flex;
-    color: var(--black);
+    
     text-decoration: none;
     height: 100%;
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+a{
+    color: var(--black);
 }
 .navigation a:hover{
     background-color: var(--darkred);
@@ -82,8 +87,8 @@ nav{
 color: aqua;
 }
 
-.incompleted{
-color: red;
+.classes_list li.incompleted{
+color: rgb(2, 2, 2);
 }
 img {
     width: 100px;
@@ -148,7 +153,11 @@ ul{
 
 .classes_menu li{
     width: 30%;
-    background-color: var(--olive)
+    background-color:#94A7AE;
+    
+}
+.classes_menu a{
+    color: #100C0D;
 }
 
 .classes_menu li:hover{
@@ -161,7 +170,7 @@ ul{
     text-decoration: none;
 
     padding: 0 10px 0 10px ;
-    color: var(--gray)
+    
 }
 .classes_list{
     width: 100%;
@@ -179,10 +188,21 @@ ul{
     color: var(--gray);
 }
 .footer{
+    margin-top: 10px;
     width: 80%;
     background-color: var(--beige);
     text-align: center;
     color: var(--black);
 
 }
-
+h3{
+    color: #100C0D;
+}
+.active {
+    background-color: var(--darkred);
+    color: var(--gray);
+}
+.active li a{
+    
+    color: var(--gray);
+}
