@@ -1,6 +1,6 @@
 [{
     "name": "Mercury",
-    "address":"111 King st",
+    "email":"mercury@gmail.com",
     "phone_number":"111-111-11",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -10,7 +10,7 @@
 },
 {
     "name": "Venus",
-    "address":"222 Qween st",
+    "email":"venus@gmail.com",
     "phone_number":"222-222-22",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -20,7 +20,7 @@
 },
 {
     "name": "Earth",
-    "address":"333 Jane st",
+    "email":"earth@gmail.com",
     "phone_number":"333-333-33",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -30,7 +30,7 @@
 },
 {
     "name": "Mars",
-    "address":"444 Lane st",
+    "email":"mars@gmail.com",
     "phone_number":"444-444-44",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -40,7 +40,7 @@
 },
 {
     "name": "Jupiter",
-    "address":"555 Mackenze st",
+    "email":"jupiter@gmail.com",
     "phone_number":"555-555-55",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -50,7 +50,7 @@
 },
 {
     "name": "Saturn",
-    "address":"666 Mountain st ",
+    "email":"saturn@gmail.com",
     "phone_number":"666-666-66",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
@@ -60,7 +60,7 @@
 },
 {
     "name": "Uranus",
-    "address":"777 Palace st",
+    "email":"uranus@gmail.com",
     "phone_number":"",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",

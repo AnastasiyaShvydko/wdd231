@@ -10,7 +10,7 @@
     <meta property="og:description" content="WDD 231 - Web Frontend Development I Anastasiia Shvydko ">
     <meta property="og:image" content="images/logo.webp">
     <meta property="og:url" content="https://anastasiyashvydko.github.io/wdd231/chamber/directory.html">
-    <meta>
+    <meta property="og:type" content="chamber site">
     <link rel="icon" href="images/favicon-3.ico">
     <script defer src="scripts/chamber.js"></script>
     <script defer src="scripts/getdates.js"></script>
@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="company_logo">
             <img src="images/logo.webp" alt="logo">
             <h1>Toronto Chamber of Commerce</h1>
          </div>
@@ -43,7 +43,10 @@
     <main>
         <div id="block"></div>
     </main>
-    <footer></footer>
+    <footer id="footer">
+        <p>&copy;<span id="currentyear"></span> Anastasiia Shvydko, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>
