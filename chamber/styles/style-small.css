@@ -46,7 +46,7 @@ nav.show{
     text-align: center;
     width: 100%;
     text-decoration: none;
-    color: aliceblue;
+    
     
     
 
@@ -80,6 +80,13 @@ ul#menu li a{
     
    
 }
+.active{
+    background-color: white;
+    color: rgb(16, 16, 16);
+}
+a{
+    color: white;
+}
 
 
 
@@ -97,12 +104,7 @@ ul#menu li a{
     margin-bottom: 10pt;
 
 }
-.card:nth-child(even){
-    margin-left: 10pt;
-}
-.card:nth-child(odd){
-    margin-right: 10pt;
-}
+
 
 .card img{
     width:80%;

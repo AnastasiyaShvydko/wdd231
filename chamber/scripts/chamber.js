@@ -1,6 +1,7 @@
 const block = document.getElementById('block');
 const humbutton = document.getElementById('menu');
 const mainnav = document.getElementById('animated');
+const directory = document.getElementById('directory');
 
 humbutton.addEventListener('click', ()=>{
     humbutton.classList.toggle('show');
@@ -69,6 +70,7 @@ const viewData = async ()=>{
 }
 const main = () =>{
     try {
+        directory.classList.add('active');
         getData();
         viewData();
       } catch (error) {
