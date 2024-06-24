@@ -33,6 +33,7 @@ const viewData = async ()=>{
         h2.innerHTML = i.name;
         let img = document.createElement('img');
         img.src = i.icon;
+        img.alt = "company logo";
         
         let ul = document.createElement('ul');
         

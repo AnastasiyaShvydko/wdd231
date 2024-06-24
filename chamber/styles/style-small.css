@@ -10,7 +10,7 @@
     font-size: 2em;
     background: none;
     border: none;
-    color: aliceblue;
+    color:white;
     
 }
 #menu.show::before{
@@ -86,6 +86,7 @@ ul#menu li a{
 }
 a{
     color: white;
+    background-color: rgb(31, 28, 76);
 }
 
 
@@ -126,8 +127,8 @@ padding: 10px;
 }
 
 header{
-   color: rgb(228, 238, 246);
-    background-color: rgb(126, 126, 187);
+   color:white;
+    background-color: rgb(44, 44, 135);
     display:grid;
     grid-template: auto auto/ 25% 25% 25% 25% ;
  margin-bottom: 10pt ;
@@ -141,7 +142,7 @@ header img{
 }
 footer{
     color: rgb(228, 238, 246);
-     background-color: rgb(126, 126, 187);
+     background-color: rgb(44, 44, 135);
      display:flex;
      flex-direction: column;
      align-items: center;
