@@ -21,15 +21,34 @@ nav{
     
 
 }
-#block{
+.grid{
     display: grid;
     grid-template-columns: 50% 50%;
     
 }
-.card:nth-child(even){
+.list{
+    display: flex;
+    flex-direction: column;
+    margin: 0pt;
+}
+
+
+.grid .card:nth-child(even){
     margin-left: 10pt;
 }
-.card:nth-child(odd){
+.grid .card:nth-child(odd){
     margin-right: 10pt;
 }
+}
+#btn_block{
+    display: block;
+    text-align: center;
+    margin: 10px;
+   
+}
+
+#btn_block button{
+    color: white;
+    background-color: rgb(31, 28, 76);
+    padding: 10px;
 }

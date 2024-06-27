@@ -34,7 +34,7 @@
     "phone_number":"444-444-44",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
-    "membership_level": 1,
+    "membership_level": 2,
     "established": 1990
 
 },
@@ -44,7 +44,7 @@
     "phone_number":"555-555-55",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
-    "membership_level": 1,
+    "membership_level": 3,
     "established": 1990
 
 },
@@ -54,7 +54,7 @@
     "phone_number":"666-666-66",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
-    "membership_level": 1,
+    "membership_level": 2,
     "established": 1990
 
 },
@@ -64,7 +64,7 @@
     "phone_number":"",
     "website_url":"https://www.site.com",
     "icon":"images/store.png",
-    "membership_level": 1,
+    "membership_level": 3,
     "established": 1990
 
 }
