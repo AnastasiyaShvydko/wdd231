@@ -1,5 +1,5 @@
 
-@media (min-width: 40em){
+@media (min-width: 60em){
     .navigation{
     display: flex;
     height: 100%;
@@ -58,5 +58,47 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#home_block{
+    display: grid;
+    grid-template: auto 250px auto / repeat(12, 8.33%);;
+}
+
+#picture_div{
+    grid-area: 1/2/2/12;
+}
+#picture_div img{
+    
+}
+
+#forecast_section{
+    height: 100%;
+    grid-area: 2/10/3/13;
+    padding: 10px;
+    
+}
+#forecast_section li{
+    list-style: none;
+}
+#weather_section{
+    height: 100%;
+    grid-area: 2/7/3/10;
+    list-style: none;
+    padding: 10px;
+}
+#weather_section li{
+    list-style: none;
+}
+
+#members_section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    grid-area: 3/1/4/13;
+}
+#event_section{
+    height: 100%;
+    grid-area: 2/1/3/7;
+    padding: 10px;
 }
 }
