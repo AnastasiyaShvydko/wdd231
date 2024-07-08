@@ -263,16 +263,16 @@ textarea{
     width:30%;
     height: 30px;
     transition: width 2s, height 4s;
-    background-color: rgb(21 159 249);
+    background-color: rgb(26, 109, 165);
     color: aliceblue;
 }
 
 #btn_join:hover{
     width: 40%;
   
-    background-color:rgb(0 104 226);
+    
 }
-label,#btn_join{
+label,#btn_join, p{
     font-size: 1.2rem;
 }
 #radio_section{
