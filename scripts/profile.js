@@ -6,6 +6,7 @@ const humbutton = document.querySelector("#menu");
 const mainnav = document.querySelector(".navigation");
 const total_credit = document.getElementById('total_credit');
 const credits = [];
+const dialog_button = document.querySelector(".dialog_button");
 
 const courses = [
   {
@@ -109,6 +110,28 @@ const show = (array) =>{
 array.forEach(element => {
     let li = document.createElement('li');
     li.innerHTML = `${element.subject} ${element.number}`;
+    let dialog = document.createElement('dialog');
+    let dialog_button = document.createElement('button');
+    dialog_button.innerHTML = "Close";
+    dialog_button.classList = "dialog_button";
+   
+    
+    let dialog_p = document.createElement('p');
+    dialog_p.innerHTML = element.description;
+    li.addEventListener("click", () => {
+        dialog.showModal();
+      });
+    
+dialog_button.addEventListener("click", () => {
+    console.log("hi")
+    dialog.close();
+  });
+//     <dialog>
+//   <button autofocus>Close</button>
+//   <p>This modal dialog has a groovy backdrop!</p>
+// </dialog>
+// <button>Show the dialog</button>;
+
     if(element.completed == true){
         li.className = "completed";
         credits.push(element.credits);
@@ -118,7 +141,11 @@ array.forEach(element => {
         li.className = "incompleted"
     }
     classesList.appendChild(li);
-    
+    //important to add dialog to the document.body
+    document.body.appendChild(dialog);
+    dialog.appendChild(dialog_button);
+    dialog.appendChild(dialog_p);
+   
 });
 }
 
@@ -139,5 +166,7 @@ const countTotal = (total, value) => {
 console.log(credits);
 
 show(courses);
+
+
 total_credit.innerHTML = `Total credit: ${credits.reduce(countTotal)}`;
 

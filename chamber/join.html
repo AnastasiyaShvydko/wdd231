@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development I Anastasiia Shvydko ">
+    <meta name="author" content="Anastasiia Shvydko">
+    <meta property="og:site_name" content="Chamber">
+    <meta property="og:title" content="Anastasiia Shvydko Chamber of Commerce">
+    <meta property="og:description" content="WDD 231 - Web Frontend Development I Anastasiia Shvydko ">
+    <meta property="og:image" content="https://anastasiyashvydko.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://anastasiyashvydko.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon-3.ico">
+    <script defer src="scripts/chamber.js"></script>
+    <script defer src="scripts/join.js"></script>
+
+    <!-- <script type="module" src="scripts/chamber.js"></script> -->
+
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/style-small.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chivo+Mono&family=Kanit:wght@500&family=Orbitron&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+80s+Fade&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <title>Anastasiia Shvydko Chamber of Commerce</title>
+   
+</head>
+<body>
+    <header>
+        <div id="company_logo">
+            <img src="images/logo.webp" alt="logo">
+            <h1>Toronto Chamber of Commerce</h1>
+         </div>
+        
+        <nav id="animated">  
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="directory">Directory</a></li>
+                <li><a href="#" id="join">Join</a></li>
+                <li><a href="#" id="discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="form">
+            <form action="thanks.html" method="get">
+                <label>First Name<br><input type="text" id="first_name" name="first_name" required></label><br><br>
+                <label>Last Name<br><input type="text" id="last_name" name="last_name" required></label><br><br>
+                <label>Title<br><input type="text" id="organizational_title" name="organizational_title" required></label><br><br>
+                <label>Email<br><input type="email" id="email" name="email" required placeholder="yourmail@mail.com"></label><br><br>
+                <label>Phone<br><input type="phone" id="phone" name="phone" requiredn placeholder="XXX-XXX-XX-XX"></label><br><br>
+                <label>Organizaition Name<br><input type="text" id="organizaition_name" name="organizaition_name" required></label><br><br>
+                <h3>Choose Membership Level</h3><br>
+                <div id="radio_section">
+                <label for="np"><input type="radio" id="np" name="level" value="np" required>NP</label> 
+                <label for="bronze"><input type="radio" id="bronze" name="level" value="bronze" required>Bronze </label>
+                <label for="silver"><input type="radio" id="silver" name="level" value="silver" required>Silver </label>
+                <label for="gold"> <input type="radio" id="gold" name="level" value="gold" required>Gold </label>
+                </div>
+                <button id="dialog_button">Read More about Membership</button><br>
+                
+                <label for="description">Description<br><textarea  id="description" name="description"></textarea></label><br><br>
+               
+                <button type="submit" id="btn_join" value="Join">Join</button><br>
+                
+                
+
+            </form>
+        <!-- <img src="images/main_img.jpg" alt="main image" id="main_img"> -->
+       
+    </div>
+    </main>
+    <footer id="footer">
+        <p>&copy;<span id="currentyear"></span> Anastasiia Shvydko, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

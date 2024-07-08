@@ -179,14 +179,21 @@ footer{
  picture img{
     width: 100%;
  }
+ #btn_block{
+    display: none;
+ }
 
 
-#picture_div button{
+#picture_div a{
     grid-area: 2/2/3/3;
     width: 70%;
     height: 40%;
-    opacity: 70%;
+    display: flex;
     font-size: 1.2rem;
+    text-decoration: unset;
+    align-items:center;
+    justify-content: center;
+
 }
 #forecast_section, #weather_section,#event_section{
     height: 250px;
@@ -194,4 +201,107 @@ footer{
 }
 #members_section{
     height: auto;
+}
+dialog button{
+    margin:10px;
+}
+
+dialog[open]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 200px;
+    left:30%;
+    right: 200px;
+    width:40%;
+    height:200px;
+}
+::backdrop{
+   background-color: rgba(42, 17, 65, 0.358);
+}
+form input{
+    width:100%;
+    height: 30px;
+}
+#form{
+   
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+form{
+    color: aliceblue;
+    background-color:rgb(31, 28, 76); 
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    padding: 10px;
+}
+#dialog_button{
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-bottom-color: rgb(244, 162, 193);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    background-color: unset;
+    margin-bottom: 10px;
+    align-self: center;
+    color: aliceblue;
+    padding: 0px 10px 0px 10px;
+}
+textarea{
+    width: 100%;
+    min-height: 200px;
+}
+#btn_join{
+    align-self: center;
+    width:30%;
+    height: 30px;
+    transition: width 2s, height 4s;
+    background-color: rgb(21 159 249);
+    color: aliceblue;
+}
+
+#btn_join:hover{
+    width: 40%;
+  
+    background-color:rgb(0 104 226);
+}
+label,#btn_join{
+    font-size: 1.2rem;
+}
+#radio_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#radio_section label{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+}
+#thanks_block{
+    display: flex;
+    flex-direction: column;
+    
+}
+#thanks_block li{
+    list-style: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }

@@ -206,3 +206,6 @@ h3{
     
     color: var(--gray);
 }
+dialog[open]{
+    display: block;
+}

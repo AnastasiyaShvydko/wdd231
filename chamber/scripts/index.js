@@ -24,8 +24,9 @@ const getDataImgSection= () =>{
     img.alt = "our community picture";
    
     
-    let btn_join = document.createElement('button');
+    let btn_join = document.createElement('a');
     btn_join.innerHTML= 'Join Us';
+    btn_join.href = "join.html";
 
 
     home_block.appendChild(div);
