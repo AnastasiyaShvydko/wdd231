@@ -1,0 +1,30 @@
+h3{
+    font-family: "Playfair Display", serif;
+    color:#008692;
+    text-decoration: underline;
+    text-decoration-color: #ffff44 ;
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    background-color:#2acc7d ;
+    color: #003f5c;
+    
+}
+img{
+    width: 500px;
+}
+#container{
+    width: 80%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#Bebas{
+    font-family: "Bebas Neue", sans-serif;
+}
+#Playfair{
+    font-family: "Playfair Display", serif;
+}

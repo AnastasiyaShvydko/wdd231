@@ -166,6 +166,7 @@ const showMembersSection = async () => {
     console.log(randomArray.length);
     while (randomArray.length < 3){
             let index = Math.floor(Math.random() * membersSilverGold.length);
+            console.log(index)
             if(randomArray.includes(membersSilverGold[index])){
                 index = Math.floor(Math.random() * membersSilverGold.length);
             }

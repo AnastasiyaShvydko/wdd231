@@ -26,11 +26,11 @@ directory.addEventListener('click', ()=>{
 
 
 discover.addEventListener('click', ()=>{
-    //discover_page();
+    discover.href = "discover.html";
 });
 
 join.addEventListener('click', ()=>{
-    join.href = "join.html"
+    join.href = "join.html";
 });
 
 humbutton.addEventListener('click', ()=>{
@@ -44,6 +44,9 @@ if(location.pathname == "/chamber/index.html"){
 }
 else if (location.pathname == "/chamber/directory.html") {
     directory.classList.toggle('active');
+} 
+else if (location.pathname == "/chamber/discover.html") {
+    discover.classList.toggle('active');
 } 
 else if (location.pathname == "/chamber/join.html"){
     join.classList.toggle('active');

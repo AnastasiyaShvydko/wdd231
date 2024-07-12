@@ -299,6 +299,24 @@ main{
     flex-direction: column;
     align-items: center;
 }
+#discover_block{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#discover_images_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#discover_sidebar_event_section{
+    height: 30%;
+}
+#discover_sidebar_greet_section{
+    height: 30%;
+}
+
 
 @keyframes glowing {
     0% { background-position: 0 0; }
