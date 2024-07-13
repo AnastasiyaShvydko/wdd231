@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color:white;
+    
+}
+#menu.show::before{
+    content: "X";
+}
+
+nav{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    background-color: rgb(31, 28, 76);
+}
+nav ul {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;}
+
+nav.show{
+    grid-template-rows: 1fr;
+}
+#menu::before{
+    content: "☰";
+    color: var(--black);
+}
+
+
+.navigation a{
+    padding:  10px 0 10px 0;
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    
+    
+    
+
+}
+
+.navigation {
+    width: 100%;
+}
+
+ul#menu li a{
+    width: 100%;
+    display: block;
+    color: var(--black);
+    text-decoration: none;
+    height: 100%;
+   
+    align-items: center;
+    justify-content: center;
+   
+}
+.navigation li{
+    
+    width: 100%;
+   
+}
+
+.navigation  a:hover{
+    background-color: white;
+    color: rgb(16, 16, 16);
+   
+    
+   
+}
+
+.active{
+    background-color: white;
+    color: rgb(16, 16, 16);
+}
+a{
+    color: white;
+    background-color: rgb(31, 28, 76);
+}
+header{
+    color:white;
+    background-color: rgb(44, 44, 135);
+    display:grid;
+    grid-template: auto auto/ 25% 25% 25% 25% ;
+    margin-bottom: 10pt ;
+}
+#home_block img{
+    width: 100%;
+}

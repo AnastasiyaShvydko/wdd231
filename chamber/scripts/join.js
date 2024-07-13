@@ -1,4 +1,7 @@
 const dialog_button = document.getElementById('dialog_button');
+const timestamp = document.getElementById('timestamp');
+
+timestamp.value = new Date(Date.now());
 
 let dialog = document.createElement('dialog');
 let dialog_close_button = document.createElement('button');

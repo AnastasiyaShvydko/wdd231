@@ -1,0 +1,64 @@
+[{
+    "name": "Mercury",
+    "serves": 12,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Venus",
+    "serves": 6,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Earth",
+    "serves": 24,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Mars",
+    "serves": 6,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Jupiter",
+    "serves": 12,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Saturn",
+    "serves": 12,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+},
+{
+    "name": "Uranus",
+    "serves": 6,
+    "price": 120,
+    "gluten_free": true,
+    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
+    "icon":"images/cake.png"
+
+}
+]
