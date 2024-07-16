@@ -85,17 +85,34 @@ ul#menu li a{
     background-color: white;
     color: rgb(16, 16, 16);
 }
-a{
-    color: white;
-    background-color: rgb(31, 28, 76);
-}
+
 header{
-    color:white;
-    background-color: rgb(44, 44, 135);
+    color:#ffff44 ;
+    background-color: #003f5c;
     display:grid;
     grid-template: auto auto/ 25% 25% 25% 25% ;
     margin-bottom: 10pt ;
 }
 #home_block img{
     width: 100%;
+}
+
+#products_div{
+    display: grid;
+    grid-template-columns:  50% 50%;
+}
+.product_card img{
+max-width: 100%;
+}
+#cart_block{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    grid-area: 2/4/3/5;
+}
+#cart_block a{
+    padding: 10px;
+}
+a{
+    color:#ffff44 ;
 }

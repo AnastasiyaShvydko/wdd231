@@ -7,6 +7,7 @@
 // discover_block.innerHTML = calendar;
 const event_section = document.getElementById('discover_sidebar_event_section');
 const greeting_section = document.getElementById('discover_sidebar_greeting_section');
+const statistic_section = document.getElementById('discover_sidebar_statistic_section');
 const MY_ACCESS_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzYmQwZmRiYzAwMTE2MGNlYzQxM2YyNDhhMWUwNzhkNCIsImp0aSI6IjJiNjRmOWNhNmEzM2Q4OGIwZmZjNGZiYWQ4ZDNhMzI5Y2IzNDU2N2M1NmVkZDEwNTRiOTNkOTUyMmNiMDNhNzZkMGEyM2U3YjVmODVkMTNhIiwiaWF0IjoxNzIwNjMxMTk1LjA4Nzk5NiwibmJmIjoxNzIwNjMxMTk1LjA4ODAwMSwiZXhwIjozMzI3NzUzOTk5NS4wODU3NDcsInN1YiI6Ijc2MDQ2NTE2IiwiaXNzIjoiaHR0cHM6Ly9tZXRhLndpa2ltZWRpYS5vcmciLCJyYXRlbGltaXQiOnsicmVxdWVzdHNfcGVyX3VuaXQiOjUwMDAsInVuaXQiOiJIT1VSIn0sInNjb3BlcyI6WyJiYXNpYyJdfQ.HV8OupwgB3v4b2pfNAqlYHVs-Pjk2t5euQbGANVLHNjn4ACTdUtRhGggF_iVOHDKjEvxeV1xVzntnlSvCyKxdwXRSs_jqtXdYtaylx9tupdnmKXnIrQMlNDWD7xX591K0e7KAYW2meni5sQIbzX0zi1S4Qj5SnVwap3MrS1Dfh4ZT3cnXBqmiiFQdoySw9vhi5X2mesD1Py4kIsWPDNMGdsDhX2FJHDSgD8zqhW83G5pWg41kpOgVl9s3LepZhyCUdY2CxP2nfZ2svFXkxKuOAUuvZKKP5BoGN_fuKzZAgP-hPdjXiiKUDvjRuxPBNndRTj1Xqlrt3PZeXLLixVruo8dnzqDxmYXgt9tFMLYAlmYCCAjqLgXuEaKmApVGZae0dBIsr1lvdB3HckTfzFGPfaCmUlMl9Pmf2oEGlHIledjICpa6001aoeitX79KBWnv1Kea3gSxBKc301LMv6T5sjiCBcl5ekLYTafOLDWnbBZy3vkaTGGBuwD83HMeeLK--7m6yIDgiB7lLcD3YoNehGh6oc8C040gZK9O3iC4rcjU7M8qZ2XKofuzYOYfkhUFI2oY97nzkaqVUUR7Ssc5vCnxwa1LIn8oUI1GKitURL_B8X0MPMlDzOMrfUv9TtaHoDQquHa9nS4FDEzEMjYAl29q8Oxa8yG1DI_kdU8q-U'
 
 
@@ -29,7 +30,7 @@ let count_visits = ()=>{
 
     }
     else if(days == 0 ){
-        p.innerHTML= 'Back so soon! Awesome!';
+        p.innerHTML= `Back so soon!<br>Awesome!`;
         localStorage.setItem('visits', visit);
     }
     else{
@@ -95,4 +96,39 @@ const randomEvent = async ()=>{
     p.innerHTML = eventArray[index].text;
 }
   
+
+const getStatistic = async () =>{
+    const url = 'https://covid-19-data.p.rapidapi.com/country/code?format=json&code=ca';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '34e5505768mshd5582f8bd14f232p10146ejsnf20c689a1a58',
+		'x-rapidapi-host': 'covid-19-data.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	console.log(result);
+    return result;
+} catch (error) {
+	console.error(error);
+}
+}
+
+const veiwStatistic = async () =>{
+    let statistic = await getStatistic();
+    let h2 = document.createElement('h2');
+    h2.innerHTML = "Covid-19 Statistic";
+    let p = document.createElement('p');
+    p.innerHTML = `Confirmed cases: ${statistic[0].confirmed}<br>
+    In critical condition: ${statistic[0].critical}<br>
+    Deaths: ${statistic[0].deaths}`
+  
+    statistic_section.appendChild(h2);
+    statistic_section.appendChild(p);
+
+}
+veiwStatistic();
 randomEvent();

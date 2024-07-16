@@ -300,9 +300,9 @@ main{
     align-items: center;
 }
 #discover_block{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 #discover_images_block{
     display: flex;
@@ -310,11 +310,24 @@ main{
     align-items: center;
     justify-content: center;
 }
-#discover_sidebar_event_section{
-    height: 30%;
+#discover_images_block img{
+    width: 100%;
 }
-#discover_sidebar_greet_section{
-    height: 30%;
+#discover_sidebar_event_section{
+    height: 300px;
+}
+#discover_sidebar_greeting_section{
+    height: 300px;
+   
+      
+        
+}
+#discover_sidebar_greeting_section p{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 

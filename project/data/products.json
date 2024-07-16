@@ -1,64 +1,131 @@
 [{
-    "name": "Mercury",
+    "name": "Pancakes",
     "serves": 12,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Venus",
+    "name": "Rock Cakes",
     "serves": 6,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Earth",
+    "name": "Carrot Cake",
     "serves": 24,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Mars",
+    "name": "Dundee cake",
     "serves": 6,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Jupiter",
+    "name": "Parkin Cake",
     "serves": 12,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Saturn",
+    "name": "Eccles Cakes",
     "serves": 12,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
 
 },
 {
-    "name": "Uranus",
+    "name": "Madeira Cake",
     "serves": 6,
     "price": 120,
-    "gluten_free": true,
-    "description":"Choose from a light vanilla or rich chocolate base, decorated with red & white buttercream and sprinkles. Finished with piped buttercream grass, footballs, and It's Coming Home edible image.",
-    "icon":"images/cake.png"
+    "gluten_free": true
+
+},
+{"name": "Christmas cake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+},
+{"name": "Blini Pancakes",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+},
+{"name": "Banana Pancakes",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+},
+{"name": "Battenberg Cake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+},
+{"name": "New York cheesecake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+},
+{"name": "Vegan Chocolate Cake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+
+},
+{"name": "Tunisian Orange Cake",
+"serves": 6,
+"price": 100,
+"gluten_free": true
+
+
+},
+{"name": "Honey Yogurt Cheesecake",
+"serves": 6,
+"price": 75,
+"gluten_free": true
+
+
+},
+{"name": "Salted Caramel Cheescake",
+"serves": 6,
+"price": 60,
+"gluten_free": true
+
+
+},
+{"name": "Peanut Butter Cheesecake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+
+},
+{"name": "Provençal Omelette Cake",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
+
+},
+{"name": "Polskie Naleśniki (Polish Pancakes)",
+"serves": 6,
+"price": 120,
+"gluten_free": true
+
 
 }
 ]
+ 
+ 
