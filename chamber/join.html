@@ -48,12 +48,12 @@
         <div id="form">
             <form action="thanks.html" method="get">
                 <input id="timestamp"  type="hidden" >
-                <label>First Name<br><input type="text" id="first_name" name="first_name" required></label><br><br>
-                <label>Last Name<br><input type="text" id="last_name" name="last_name" required></label><br><br>
-                <label>Title<br><input type="text" id="organizational_title" name="organizational_title" required></label><br><br>
-                <label>Email<br><input type="email" id="email" name="email" required placeholder="yourmail@mail.com"></label><br><br>
-                <label>Phone<br><input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XX-XX"></label><br><br>
-                <label>Organizaition Name<br><input type="text" id="organizaition_name" name="organizaition_name" required></label><br><br>
+                <label>First Name<br><input type="text" id="first_name" name="first_name" required autocomplete="given-name" title="Your first name"></label><br><br>
+                <label>Last Name<br><input type="text" id="last_name" name="last_name" required autocomplete="family-name" title="Your last name"></label><br><br>
+                <label>Title<br><input type="text" id="organizational_title" name="organizational_title" required autocomplete="organization-title" title="Your organization title"></label><br><br>
+                <label>Email<br><input type="email" id="email" name="email" required placeholder="yourmail@mail.com" autocomplete="email" title="Your email"></label><br><br>
+                <label>Phone<br><input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XX-XX" autocomplete="tel" title="A Phone Number with dashes"></label><br><br>
+                <label>Organizaition Name<br><input type="text" id="organizaition_name" name="organizaition_name" required autocomplete="organization" title="Organizaition name"></label><br><br>
                 <p>Choose Membership Level<p><br>
                 <div id="radio_section">
                 <label for="np"><input type="radio" id="np" name="level" value="np" required>NP</label> 
