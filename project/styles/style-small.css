@@ -4,13 +4,13 @@
 }
 #menu{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     text-decoration: none;
     font-size: 2em;
     background: none;
     border: none;
-    color:white;
+    color: #060606;
     
 }
 #menu.show::before{
@@ -18,11 +18,12 @@
 }
 
 nav{
-    grid-column: 1/5;
+    grid-column: 1/11;
+   
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-    background-color: rgb(31, 28, 76);
+   
 }
 nav ul {
     overflow: hidden;
@@ -74,45 +75,191 @@ ul#menu li a{
 }
 
 .navigation  a:hover{
-    background-color: white;
-    color: rgb(16, 16, 16);
-   
-    
-   
+    background-color: #003f5c;
+    color: #ebe7af;
 }
 
+
 .active{
-    background-color: white;
-    color: rgb(16, 16, 16);
+    background-color: #003f5c;
+    color:#ebe7af;
 }
 
 header{
-    color:#ffff44 ;
-    background-color: #003f5c;
+    background-color: #ebe7af;
     display:grid;
-    grid-template: auto auto/ 25% 25% 25% 25% ;
+    grid-template: auto auto/ repeat(10, 10%);
     margin-bottom: 10pt ;
+}
+h1{
+    font-family: "Indie Flower", cursive;
+}
+#company_logo{
+    text-align: center;
+    grid-area: 1 / 2 / 2 / 4;
+}
+#home_block{
+   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+#main_img{
+    visibility: visible;
+    width: 0px;
 }
 #home_block img{
     width: 100%;
 }
 
 #products_div{
-    display: grid;
-    grid-template-columns:  50% 50%;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
 }
 .product_card img{
-max-width: 100%;
+max-width: 80%;
 }
 #cart_block{
+   font-size: 1.2rem;
+    align-items:center;
+    grid-area: 1/8/2/10;
+
+}
+#cart_block_elements{
     display: flex;
     flex-direction: row-reverse;
-    align-items:center;
-    grid-area: 2/4/3/5;
+    align-items: center;
 }
 #cart_block a{
     padding: 10px;
 }
 a{
-    color:#ffff44 ;
+    color:rgb(16, 16, 16);
+}
+#thanks_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#thanks_block p{
+    background-color: #003f5c;
+    padding: 20px;
+    margin: 20px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#contact_block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form{
+    width: 60%;
+    color: #003f5d;
+    background-color: #ebe7af;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#btn_join{
+    width: 60%;
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #003f5c;
+    color: #ebe7af;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+form input{
+    width: 100%;
+    height: 30px;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+}
+.checkbox{
+    width:auto;
+    height: auto;
+}
+dialog button{
+    margin:10px;
+}
+
+dialog[open]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 200px;
+    left:30%;
+    right: 200px;
+    width:40%;
+    height:auto;
+}
+.product_card{
+    width: 100%;
+    background-color: #eadeab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(6, 6, 6);
+}
+.product_card h2{
+    text-align: center;
+    padding-top: 10%;
+    height: 100px;
+}
+footer{
+    display: flex;
+    color: aliceblue;
+    background-color: #003f5c;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    width: 150px;
+}
+.dialog_button{
+    margin: 10px;
+
+    background-color: unset;
+    cursor: pointer;
+    border-bottom: 0px;
+    border: 0px;
+    border-bottom: 1px #141313 solid;
+}
+.add_to_cart_button{
+    margin: 10px;
+    padding: 10px;
+    background-color: #003f5c;
+    color: #ebe7af;
+    border: 0px;
+    border-radius: 20px;
+    width: 100%;
+}
+#buttons_div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2rem;
 }

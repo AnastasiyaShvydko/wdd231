@@ -27,9 +27,9 @@ export const createProductCard = async (productList,priceList, block)=>{
         let product_card = document.createElement('div');
         product_card.className = "product_card";
         product_card.innerHTML = 
-        `<h3>${i.strMeal}</h3>
-        <img src="${i.strMealThumb}" alt="cake" load="lazy">
-        <p>Price:$${p.price}</p>`
+        `<h2>${i.strMeal}</h2>
+        <img src="${i.strMealThumb}" width="200" height="150" alt="cake" load="lazy">
+        <p class="price">Price:$${p.price}</p>`
 
         let dialog = document.createElement('dialog');
         dialog.innerHTML = `
@@ -41,10 +41,13 @@ export const createProductCard = async (productList,priceList, block)=>{
         ${i.strIngredient5}<br>
         ${i.strIngredient6}<br>
         ${i.strIngredient7}<br>
-        ${i.strIngredient8}<br>`
+        ${i.strIngredient8}<br>` 
+
+        let buttons_div = document.createElement('div');
+        buttons_div.id = "buttons_div";
 
         let dialog_button = document.createElement('button');
-        dialog_button.innerHTML = 'Detailes...';
+        dialog_button.innerHTML = 'Details...';
         dialog_button.className = 'dialog_button';
         dialog_button.addEventListener('click', ()=>{
                 dialog.showModal();
@@ -65,9 +68,12 @@ export const createProductCard = async (productList,priceList, block)=>{
                     addToOrder(i.strMeal,p.price);})
 
         products_div.appendChild(product_card);
-        product_card.appendChild(dialog_button);
         
-        product_card.appendChild(add_to_cart_button);
+        product_card.appendChild(buttons_div);
+        
+        
+        buttons_div.appendChild(add_to_cart_button);
+        buttons_div.appendChild(dialog_button);
 
         document.body.appendChild(dialog);
         dialog.appendChild(dialog_close_button);

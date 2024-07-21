@@ -32,13 +32,15 @@
 <body>
     <header>
         <div id="company_logo">
-            <img src="images/logo.webp" alt="logo">
+            
             <h1>SweetDream Shop</h1>
-              
+               
          </div>
          <div id="cart_block">
-            <a href="#" id="cart"><img src="./images/carts.png" alt="" srcset="" width="40px"></a>
-            <p id="number_of_items"></p> 
+            <div id="cart_block_elements">
+            <a href="#" id="cart" aria-label="User Cart"><img src="./images/carts.png" alt="" srcset="" width="40px"></a>
+            <p id="number_of_items"></p>  
+            </div>
         </div>
         
         <nav id="animated"> 
@@ -53,12 +55,38 @@
     </header>
     <main>
         <div id="contact_block">
+            <div id="form">
+                <form action="thanks.html" method="get">
+                    <input id="timestamp"  type="hidden" >
+                    <label>First Name<br><input type="text" id="first_name" name="first_name" required autocomplete="given-name" title="Your first name"></label><br><br>
+                    <label>Email<br><input type="email" id="email" name="email" required placeholder="yourmail@mail.com" autocomplete="email" title="Your email"></label><br><br>
+                    <label>Phone<br><input type="tel" id="phone" name="phone" required placeholder="XXX-XXX-XX-XX" autocomplete="tel" title="A Phone Number with dashes"></label><br><br>
+
+                
+                    <label for="method1"><input class="checkbox" type="checkbox" id="method1" name="method1" value="get_email">
+                    Yes, I want to get emails</label><br>
+                    <label for="method2"><input class="checkbox" type="checkbox" id="method2" name="method2" value="get_text_message">
+                    Yes, I want to get text messages or calls</label><br><br>
+                  
+                    
+                    <label for="message">Message<br><textarea  id="message" name="message"></textarea></label><br><br>
+                   
+                    <button type="submit" id="btn_join" value="Join">Send</button><br>
+                    
+                    
+    
+                </form>
        
     </div>
     </main>
     <footer id="footer">
+        <div id="footer_logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div id="footer_data">
         <p>&copy;<span id="currentyear"></span> Anastasiia Shvydko, Canada</p>
         <p id="lastModified"></p>
+    </div>
     </footer>
     
 </body>

@@ -1,0 +1,79 @@
+@media (min-width: 32em){
+
+        
+        
+header{
+    background-image: url('/project/images/cake-large.webp');
+    background-size: cover;
+    height: 500px;
+}
+#products_div{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 5px;
+}
+.navigation{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+.navigation li{
+    display: block;
+    flex: 1 1 100%;
+}
+nav ul{
+    overflow: visible;
+}
+#menu{
+    display: none;
+}
+nav{
+    padding-top: 15px;
+    grid-area: 1 / 4/ 2 / 10;
+    
+
+}
+#cart_block{
+    align-items:center;
+    grid-area: 1/10/2/11;
+}
+#company_logo{
+    padding-top: 5px;
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 3;
+}
+#main_img{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+.navigation  a:hover{
+    background-color: #003f5c;
+    color: #ebe7af;
+    
+    border-radius: 30px;
+    
+   
+    
+   
+}
+.active{
+    background-color: #003f5c;
+    color: #ebe7af;
+    
+    border-radius: 30px;
+}
+footer{
+    
+    color: aliceblue;
+    background-color: #003f5c;
+    height: 300px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+}
