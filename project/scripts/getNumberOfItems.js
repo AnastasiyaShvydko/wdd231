@@ -4,4 +4,10 @@ import { getOrderInfo } from "./addToCart.js";
 let itemsList =  getOrderInfo();
 console.log(itemsList);
 
-number_of_items.innerHTML = itemsList.length - 1;
+if(itemsList.length == 0){
+    number_of_items.innerHTML = "0"
+}
+else{
+    let number = itemsList.length - 1;
+    number_of_items.innerHTML = number;
+}

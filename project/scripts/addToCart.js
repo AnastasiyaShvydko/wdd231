@@ -4,7 +4,7 @@
 export const getOrderInfo = () =>{
     let order = localStorage.getItem('order');
 if(order == null){
-    order = 0
+    order = []
      return order;
 }
 else{
