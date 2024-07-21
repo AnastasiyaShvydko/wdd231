@@ -3,7 +3,7 @@
         
         
 header{
-    background-image: url('/project/images/cake-large.webp');
+    background-image: url('https://raw.githubusercontent.com/AnastasiyaShvydko/wdd231/master/project/images/cake-large.webp');
     background-size: cover;
     height: 500px;
 }
