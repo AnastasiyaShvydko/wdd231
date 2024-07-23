@@ -69,9 +69,12 @@ footer{
     color: aliceblue;
     background-color: #003f5c;
     height: 300px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    /* flex-direction: row; */
+    /* align-items: center;
+    justify-content: space-around; */
+}
+main{
+    height: 500px;
 }
 
 
