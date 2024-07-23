@@ -28,7 +28,7 @@ export const createProductCard = async (productList,priceList, block)=>{
         product_card.className = "product_card";
         product_card.innerHTML = 
         `<h2>${i.strMeal}</h2>
-        <img src="${i.strMealThumb}" width="200" height="150" alt="cake" load="lazy">
+        <img src="${i.strMealThumb}" width="200" height="250" alt="cake" load="lazy">
         <p class="price">Price:$${p.price}</p>`
 
         let dialog = document.createElement('dialog');
